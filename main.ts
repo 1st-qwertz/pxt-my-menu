@@ -1,12 +1,11 @@
 
 function menu() {
     choice = 0
-    choice = game.askForNumber("Choose game: (1) Thick Woods, (2) Valley Grove", 1)
     gra = choice
     game.splash(convertToText(gra))
 }
 controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
-    let mySprite = sprites.create(img`
+    mySprite = sprites.create(img`
         . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
         . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
         . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
