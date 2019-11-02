@@ -6,7 +6,7 @@ function menu() {
     game.splash(convertToText(gra))
 }
 controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
-    mySprite = sprites.create(img`
+    let mySprite = sprites.create(img`
         . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
         . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
         . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
